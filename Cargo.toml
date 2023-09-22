@@ -1,0 +1,22 @@
+[package]
+name = "syntastica-typst"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = "s"
+
+[dependencies]
+syntastica = { version = "0.4.1", git = "https://github.com/RubixDev/syntastica", rev = "d2728cb0b7e439b6088ce2f331f25e504cc2c3a4", default-features = false, features = ["runtime-c2rust", "serde"] }
+syntastica-parsers-git = { version = "0.4.1", git = "https://github.com/RubixDev/syntastica", rev = "d2728cb0b7e439b6088ce2f331f25e504cc2c3a4", default-features = false, features = ["runtime-c2rust", "all"] }
+syntastica-themes = { version = "0.4.1", git = "https://github.com/RubixDev/syntastica", rev = "d2728cb0b7e439b6088ce2f331f25e504cc2c3a4", default-features = false, features = ["runtime-c2rust"] }
+
+anyhow = "1.0.75"
+ciborium = "0.2.1"
+once_cell = "1.18.0"
+wasm-minimal-protocol = { git = "https://github.com/astrale-sharp/wasm-minimal-protocol", rev = "c476a28647cf35d193715a56956e3bc1b453eade", version = "0.1.0" }
