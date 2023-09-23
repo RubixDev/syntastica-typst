@@ -44,9 +44,10 @@ directory.
 
 ## Installation
 
-Before this package becomes available in the
-[official package repository](https://github.com/typst/packages) (if it even
-ever does), you can use it in one of two ways.
+Due to its large size, this package
+[was not accepted](https://github.com/typst/packages/pull/143) for the
+[official package repository](https://github.com/typst/packages). However, you
+can still use it in one of two ways:
 
 ### Option 1: Install as a local package
 
