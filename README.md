@@ -104,6 +104,9 @@ One way to go about this is to add a top-level variable for toggling
 [`prod_toggle` example](https://github.com/RubixDev/syntastica-typst/blob/main/examples/prod_toggle.typ)
 for an implementation of this approach.
 
+> [!NOTE] Typst 0.13.0 drastically improved performance of WebAssambly plugins,
+> but sadly this package is still _very_ slow compared to not using it.
+
 ## Usage
 
 ### `syntastica`

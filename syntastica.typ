@@ -40,26 +40,26 @@
   if it.lang == none or syntastica-plugin.supports_lang(bytes(it.lang)).at(0) == 0 {
     it
   } else {
-    _show-highlights(cbor.decode(syntastica-plugin.highlight(bytes(it.text), bytes(it.lang), bytes(theme))))
+    _show-highlights(cbor(syntastica-plugin.highlight(bytes(it.text), bytes(it.lang), bytes(theme))))
   }
 }
 
 #let languages() = {
-  return cbor.decode(syntastica-plugin.all_languages())
+  return cbor(syntastica-plugin.all_languages())
 }
 
 #let themes() = {
-  return cbor.decode(syntastica-plugin.all_themes())
+  return cbor(syntastica-plugin.all_themes())
 }
 
 #let theme-bg(theme) = {
-  let color = cbor.decode(syntastica-plugin.theme_bg(bytes(theme)))
+  let color = cbor(syntastica-plugin.theme_bg(bytes(theme)))
   if color == none { return none }
   return rgb(color.red, color.green, color.blue)
 }
 
 #let theme-fg(theme) = {
-  let color = cbor.decode(syntastica-plugin.theme_fg(bytes(theme)))
+  let color = cbor(syntastica-plugin.theme_fg(bytes(theme)))
   if color == none { return none }
   return rgb(color.red, color.green, color.blue)
 }

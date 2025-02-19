@@ -1,8 +1,8 @@
 [package]
 name = "syntastica"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["RubixDev"]
-compiler = "0.8.0"
+compiler = "0.13.0"
 entrypoint = "syntastica.typ"
 exclude = ["src", "Cargo.*", "examples", "*.sh", ".cargo"]
 keywords = ["tree-sitter", "code", "listings", "syntax"]

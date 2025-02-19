@@ -118,7 +118,7 @@ def fib(n):
 
 It can also be used in conbination with `algo` for even prettier listings:
 
-#import "@preview/algo:0.3.3": code
+#import "@preview/algo:0.3.4": code
 #code(
   indent-guides: 1pt + gray,
   row-gutter: 5pt,
